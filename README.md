@@ -2,16 +2,6 @@
 
 Este projeto é uma aplicação que utiliza Modelos de Linguagem de Grande Escala (LLM) para ler documentos em formato PDF ou DOCX e responder perguntas baseadas no conteúdo desses documentos. O objetivo principal é permitir que o usuário envie documentos e obtenha respostas precisas relacionadas às informações contidas neles, utilizando as capacidades avançadas de entendimento e processamento de linguagem natural (PNL) dos LLMs.
 
-## Índice
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Como Rodar](#como-rodar)
-- [Como Usar](#como-usar)
-- [Contribuindo](#contribuindo)
-
 ## Sobre o Projeto
 
 O objetivo deste projeto é permitir a interação inteligente com documentos em formato PDF e DOCX por meio de uma interface simples. A aplicação carrega o documento enviado, extrai o texto e utiliza um modelo de linguagem (como o GPT-3 ou GPT-4) para fornecer respostas às perguntas feitas pelo usuário, com base no conteúdo do documento carregado.
