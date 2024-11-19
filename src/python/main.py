@@ -19,12 +19,24 @@ st.sidebar.header("Faça o upload de um documento")
 
 uploaded_file = st.sidebar.file_uploader("Escolha um arquivo PDF ou DOCX", type=["pdf", "docx"])
 
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
 if uploaded_file:
     text = process_uploaded_file(uploaded_file)
-
-    st.header("Pergunte sobre o documento")
+    
     question = st.text_input("Digite sua pergunta")
 
     if question:
+        st.session_state.messages.append({"role": "user", "content": question})
+        
         result = nlp(question=question, context=text)
-        st.write(f"Resposta: {result['answer']}")
+        answer = result['answer']
+        
+        st.session_state.messages.append({"role": "assistant", "content": answer})
+        
+        for message in st.session_state.messages:
+            if message["role"] == "user":
+                st.markdown(f"**Você:** {message['content']}")
+            else:
+                st.markdown(f"**Assistente:** {message['content']}")
