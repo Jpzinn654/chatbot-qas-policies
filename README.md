@@ -1,4 +1,4 @@
-# Projeto: ChatBot Perguntas e Resposta Baseada em Documentos com LLM
+# Projeto: ChatBot Perguntas e Respostas Baseada em Documentos com LLM
 
 Este projeto é uma aplicação que utiliza Modelos de Linguagem de Grande Escala (LLM) para ler documentos em formato PDF ou DOCX e responder perguntas baseadas no conteúdo desses documentos. O objetivo principal é permitir que o usuário envie documentos e obtenha respostas precisas relacionadas às informações contidas neles, utilizando as capacidades avançadas de entendimento e processamento de linguagem natural (PNL) dos LLMs.
 
