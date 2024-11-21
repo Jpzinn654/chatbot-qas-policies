@@ -2,6 +2,12 @@
 
 Este projeto é uma aplicação que utiliza Modelos de Linguagem de Grande Escala (LLM) para ler documentos em formato PDF ou DOCX e responder perguntas baseadas no conteúdo desses documentos. O objetivo principal é permitir que o usuário envie documentos e obtenha respostas precisas relacionadas às informações contidas neles, utilizando as capacidades avançadas de entendimento e processamento de linguagem natural (PNL) dos LLMs.
 
+## Video do Projeto
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8706ffa7-c806-458f-85cb-fb18e4b1df83" width="800" height="450">
+</div>
+
 ## Sobre o Projeto
 
 O objetivo deste projeto é permitir a interação inteligente com documentos em formato PDF e DOCX por meio de uma interface simples. A aplicação carrega o documento enviado, extrai o texto e utiliza um modelo de linguagem (como o GPT-3 ou GPT-4) para fornecer respostas às perguntas feitas pelo usuário, com base no conteúdo do documento carregado.
@@ -18,8 +24,6 @@ O objetivo deste projeto é permitir a interação inteligente com documentos em
 - **Streamlit**: Framework para criação da interface de usuário web.
 - **PyPDF2 / pdfplumber**: Bibliotecas para extrair texto de arquivos PDF.
 - **python-docx**: Biblioteca para extrair texto de arquivos DOCX.
-- **OpenAI GPT (ou outro modelo LLM)**: Utilizado para processamento de linguagem natural e geração de respostas.
-- **Pandas / Numpy**: Bibliotecas auxiliares para manipulação de dados, se necessário.
 
 ## Pré-requisitos
 
@@ -27,7 +31,6 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 
 - **Python 3.x** ou superior
 - **pip** (gerenciador de pacotes do Python)
-- **OpenAI API Key**: Se você estiver usando a API do GPT, será necessário configurar sua chave de API no OpenAI.
 
 ## Instalação
 
@@ -36,17 +39,16 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 Primeiro, clone este repositório em sua máquina:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-llm-leitura-resposta.git
-cd projeto-llm-leitura-resposta
+git clone https://github.com/Jpzinn654/chatbot-qas-policies.git
 ```
 
 ### 2. Criar e Ativar o Ambiente Virtual
 
 Recomenda-se usar um ambiente virtual para gerenciar as dependências do projeto:
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # Para sistemas Linux/macOS
-venv\Scripts\activate  # Para sistemas Windows
+python3 -m venv env
+source env/bin/activate  # Para sistemas Linux/macOS
+env\Scripts\activate  # Para sistemas Windows
 ```
 
 ### 3. Instalar as Dependências
@@ -63,6 +65,7 @@ pip install -r requirements.txt
 Para rodar a aplicação, basta executar o seguinte comando:
 
 ```bash
+cd src\python
 streamlit run app.py
 ```
 Isso irá iniciar a aplicação no seu navegador padrão, normalmente acessível em http://localhost:8501.
