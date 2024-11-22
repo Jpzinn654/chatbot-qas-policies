@@ -4,9 +4,7 @@ Este projeto é uma aplicação que utiliza Modelos de Linguagem de Grande Escal
 
 ## Video do Projeto
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/8706ffa7-c806-458f-85cb-fb18e4b1df83" width="800" height="450">
-</div>
+https://github.com/user-attachments/assets/7f770d91-96bf-47c0-9fe8-52b059536925
 
 ## Sobre o Projeto
 
